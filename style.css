@@ -1,0 +1,18 @@
+.container-fluid {
+    height: 100vh;
+    background-color: rgb(14, 14, 48);
+}
+.card {
+    height: fit-content;
+    width: fit-content;
+    border-radius: 40px !important;
+}
+.temp-degree {
+    font-size: 50px;
+}
+.input-group>.form-control {
+    width: 50% !important;
+}
+.degree .units {
+    font-size: 25px;
+}
