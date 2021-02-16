@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
     
     // API key
-    const key = '8d523de3bb97c670d9c003756634841f';
+    const key = process.env.KEY;
 
     // HTML DOM elements o be updated on getting weather conditions
     let timezone = document.querySelector('.location-timezone');
