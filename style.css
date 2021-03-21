@@ -1,18 +1,42 @@
+* {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    overflow: hidden;
+}
+
 .container-fluid {
     height: 100vh;
-    background-color: rgb(14, 14, 48);
+    background-image: url('./assets/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.location-timezone{
+    font-size: 2rem;
+}
+.degree p {
+    font-size: 82px;
+    font-weight: 800;
+    text-shadow: 2px 6px rgba(0, 0, 0, 0.5);
+}
+.degree p .units {
+    font-weight: 300;
+}
+.temp-desc {
+    font-size: 32px;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+.form-row {
+    justify-content: center !important;
 }
 .card {
-    height: fit-content;
-    width: fit-content;
-    border-radius: 40px !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
 }
-.temp-degree {
-    font-size: 50px;
-}
-.input-group>.form-control {
-    width: 50% !important;
-}
-.degree .units {
-    font-size: 25px;
+@media (max-width: 450px) {
+    .degree p {
+        font-size: 55px;
+    }
 }

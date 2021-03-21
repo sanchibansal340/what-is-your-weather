@@ -12,52 +12,59 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
         crossorigin="anonymous"
     />
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
     <title>What's your Weather?</title>
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="form-group col-lg-6 my-5">
-                <form class="input-group serach-city">
-                    <input 
-                        type="search" 
-                        class="form-control" 
-                        id="city-name" 
-                        placeholder="City Name"
-                        aria-describedby="msg"
-                    />
-                    <span class="input-group-btn">
-                        <button class="btn btn-danger search" type="button">Search</button>
-                    </span>
-                </form>
-                <small class="text-danger msg"></small>
+        <form class="form-row search-city mt-5" onsubmit="return false;">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-3 col-8">
+                <input 
+                    class="form-control bg-transparent text-white border-bottom" 
+                    id="city-name" 
+                    placeholder="City Name"
+                    aria-describedby="msg"
+                />
             </div>
+            <div class="col-sm-2 col-4">
+                <button 
+                    class="btn btn-danger search" 
+                    type="submit"
+                >
+                    Search
+                </button>
+            </div>
+        </form>
+        <div class="row justify-content-center">
+            <small class="text-danger msg"></small>
         </div>
-        <div class="row justify-content-center mx-auto">
-            <div class="col-lg-4 col-md-7">
-                <div class="card p-5 mt-5">
-                    <div class="location">
-                        <h2 class="location-timezone">Place</h2>                        
-                        <div class="degree">
-                            <h2>
-                                <span class="temp-degree">Temperature</span>
-                                <span class="ml-2 units">&deg; C</span>
-                            </h2>
-                        </div>
-                        <img src="" alt="Weather Icon" class="icon img-fluid"/>
-                        <figcaption 
-                            class="temp-desc text-muted text-uppercase"
-                        >
-                            Weather
-                        </figcaption>
+
+        <div class="row justify-content-center">
+            <div class="card text-center text-white mt-5 py-4 px-5">
+                <div class="location">
+                    <p class="location-timezone font-weight-bold">Place</p>                        
+                    <div class="degree">
+                        <p>
+                            <span class="temp-degree">Temperature</span>
+                            <span class="units">&deg; C</span>
+                        </p>
                     </div>
+                    <img src="" alt="Weather Icon" class="icon img-fluid"/>
+                    <p
+                        class="temp-desc"
+                    >
+                        Weather
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Custom JS -->
-    <script src="./main.js"></script>
+    <script src="./script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
