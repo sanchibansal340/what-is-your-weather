@@ -9,7 +9,7 @@ body {
 
 .container-fluid {
     height: 100vh;
-    background-image: url('./assets/background.jpg');
+    background-image: url('https://i.pinimg.com/736x/2d/cc/c1/2dccc17c0636f95817d94106f5dc8159.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
